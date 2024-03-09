@@ -12,7 +12,7 @@ a{
     text-decoration: none;
     color: var(--color-texto);
 }
-a:hover{
+a:hover:not(#cart:hover){
     color: var(--color-acento)
 }
 header{
