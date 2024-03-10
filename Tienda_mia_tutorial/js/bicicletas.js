@@ -2,7 +2,7 @@ const bicicletas = [
     {
         id: 1,
         nombre: "Ánfora Roja",
-        img: "./images/productos/Anfora_roja.jpg",
+        img: "1.jpg",
         precio: 111111,
     },
     {

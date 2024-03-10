@@ -11,12 +11,23 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+h3, p{
+    margin: 6px 0;
+}
 a{
     text-decoration: none;
     color: var(--color-texto);
 }
 a:hover:not(#cart:hover){
     color: var(--color-acento)
+}
+button{
+    background-color: var(--color-acento);
+    color: white;
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
 }
 header{
     box-shadow: 0 3px 5px rgba(88, 83, 83, 0.288);

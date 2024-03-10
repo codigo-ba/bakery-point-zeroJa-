@@ -6,8 +6,10 @@ function crearTarjetasProductosInicio(productos){
         const nuevaBicicleta = document.createElement("div");
         nuevaBicicleta.classList = "tarjeta-producto";
         nuevaBicicleta.innerHTML = `
-            <img src=${producto.img}
-        
+            <img src="./images/productos/${producto.id}.jpg">
+            <h3>${producto.nombre}</h3>
+            <p>$${producto.precio}</p>
+            <button>Agregar al carrito</button>
         `
         contenedorTarjetas.appendChild(nuevaBicicleta);
     });
@@ -15,4 +17,4 @@ function crearTarjetasProductosInicio(productos){
 
 
 
-crearTarjetasProductosInicio(bicicletas)
+crearTarjetasProductosInicio(bicicletas);
