@@ -1,33 +1,33 @@
 const bicicletas = [
     {
         id: 1,
-        nombre: "Ánfora Roja",
+        nombre: "New York en Rojo",
         img: "1.jpg",
         precio: 111111,
     },
     {
         id: 2,
-        nombre: "Calle de París",
+        nombre: "Polidípticos Mosaic",
         precio: 222222,
     },
     {
         id: 3,
-        nombre: "Chaplin",
+        nombre: "La Llegada",
         precio: 333333,
     },
     {
         id: 4,
-        nombre: "La llegada",
+        nombre: "Chaplin",
         precio: 444444,
     },
     {
         id: 5,
-        nombre: "New Fig",
+        nombre: "Calle de París",
         precio: 555555,
     },
     {
         id: 6,
-        nombre: "Intensidad",
-        precio: 111111,
+        nombre: "Ánfora Roja",
+        precio: 666666,
     }
 ]
