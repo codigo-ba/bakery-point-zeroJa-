@@ -32,6 +32,7 @@ button{
 header{
     box-shadow: 0 3px 5px rgba(88, 83, 83, 0.288);
     padding: 10px 0;
+    margin-bottom: 10px;
 }
 header nav{
     display: flex;
