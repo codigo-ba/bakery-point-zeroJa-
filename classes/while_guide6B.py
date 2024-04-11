@@ -3,14 +3,22 @@
 #de aciertos y cantidad de errores
 
 import random
+
 tirada = input("Hacé tu tirada! Presioná 's' para comenzar!")
-if tirada == "s":
-    r = random.randint(1,6)
+total = 0
+aciertos = 0
+errores = 0
+r = random.randint(1,6)
+
+while tirada == "s":
+    total += 1
     adivinar = int(input("¿Qué número salió?: "))
     if adivinar == r:
+        aciertos += 1
         print("ACERTASTE!")
     else:
+        errores += 1 
         print("NOP!")
-sn = input("Otro tiro? 's' o 'n'?: ")
-if sn == "n":
-    print("Gracias! Adiós!")
+    tirada = input("Otro tiro? 's' o 'n'?: ")
+    
+print(f"Total de Tiradas: {total} \nTotal de Aciertos: {aciertos} \nTotal de Errores: {errores} \nGracias! Adiós!")
