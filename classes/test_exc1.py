@@ -6,7 +6,9 @@
 def main():
     edad = solicitar_edad()
     sueldo = solicitar_sueldo()
-    continuar = preguntar_si_continua()
+    continua = preguntar_si_continua()
+    evaluar_edad = edades(continua, edad)
+    mostrar_resultados(evaluar_edad)
 
 def solicitar_edad():
     e = int(input("Ingrese edad: "))
@@ -22,15 +24,27 @@ def preguntar_si_continua():
         respuesta = input("Debe ingresar S o N: ")
     return respuesta
 
-
-def edad():
+def edades(resp, e):
+    menor = 0
+    e1 = 0
+    e2 = 0
+    mayor = 0
+    if resp  == "N":
+        if e < 18:
+            menor += 1
+            
+        elif 18 <= e <= 25:
+            e1 += 1
+            
+        elif 26 <= e <= 40:
+            e2 += 1
+           
+        else:
+            mayor += 1
+    return menor, e1, e2, mayor       
     
-    if e < 18:
-        menor += 1
-    elif 18 <= e <= 25:
-        e1 += 1
-    elif 26 <= e <= 40:
-        e2 += 1
-    else:
-        mayor += 1
-    return menor, e1, e2, mayor
+
+def mostrar_resultados(edada):
+    print(edada)
+
+main()
