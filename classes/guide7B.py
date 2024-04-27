@@ -14,10 +14,12 @@ def main():
         convert_cel = convertir_celsius(cent)
         print(convert_cel)
         print("El grado Celsius (°C) sustituyó desde 1948 como unidad de medida al grado centígrado.\nAmbas unidades son iguales en valor.")
-    else:
+    elif tipo_unidad == "F":
         convert_fahr = convertir_fahrenheit(cent)
         print(convert_fahr)
-
+    else:
+        print(tipo_unidad)
+        print("Ha ocurrido un ERROR")
 
 def solicitar_centigrados():
     c = float(input ("Ingrese los grados centígrados: "))
@@ -25,11 +27,9 @@ def solicitar_centigrados():
 
 def solicitar_unidad():
     u = input("A qué unidad quiere convertir los grados centígrados? C = Celsius o F = Farenheit: ").upper()
-    if u != "C" and u != "F":
-        print("Opción Inválida. Ingrese 'C' para Celsius o 'F' para Farenheit")
-        solicitar_unidad()
-    else:
-        return u
+    while u != "C" and u != "F":
+        u = input("Entrada inválida. Debe ingresar 'C' o 'F': ").upper()
+    return u
     
 def convertir_celsius(grados_centigrados):
     return f"Los {grados_centigrados}°C ingresados equivalen a {grados_centigrados}°Celsius."
